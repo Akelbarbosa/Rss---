@@ -10,7 +10,7 @@ import SafariServices
 
 class ViewController: UIViewController {
     
-    var NewsGet: [News] = []
+    var newsRecient: [News] = []
     
     private let tableNotices: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         APICaller.shared.getNews { result in
             switch result {
                 case .success(let news):
-                self.NewsGet = news
+                self.newsRecient = news
                 DispatchQueue.main.async {
                     self.tableNotices.reloadData()
 
@@ -50,7 +50,6 @@ class ViewController: UIViewController {
         }
         
 
-        
         tableNotices.dataSource = self
         tableNotices.delegate = self
         tableNotices.register(NewsCell.self, forCellWithReuseIdentifier: "NewsCell")
@@ -75,15 +74,15 @@ class ViewController: UIViewController {
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return NewsGet.count
+            return newsRecient.count
 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCell", for: indexPath) as! NewsCell
-        if NewsGet[indexPath.row].title != nil {
-            cell.titleForCell(news: NewsGet[indexPath.row])
+        if newsRecient[indexPath.row].title != nil {
+            cell.titleForCell(news: newsRecient[indexPath.row])
             
         }
         
@@ -92,7 +91,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        guard let url = URL(string: NewsGet[indexPath.row].url ?? " ") else {return}
+        guard let url = URL(string: newsRecient[indexPath.row].url ?? " ") else {return}
         let urlNews = SFSafariViewController(url: url)
         present(urlNews, animated: true)
         

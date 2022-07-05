@@ -57,7 +57,6 @@ class NewsCell: UICollectionViewCell {
         contentView.layer.borderWidth = 0.5
         contentView.layer.borderColor = UIColor(named: "ligthGray")?.cgColor
         
-        
     }
    
     
