@@ -10,9 +10,14 @@
 		C43E6A75286D4E0500269DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E6A74286D4E0500269DD3 /* AppDelegate.swift */; };
 		C43E6A77286D4E0500269DD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E6A76286D4E0500269DD3 /* SceneDelegate.swift */; };
 		C43E6A79286D4E0500269DD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E6A78286D4E0500269DD3 /* ViewController.swift */; };
-		C43E6A7C286D4E0500269DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43E6A7A286D4E0500269DD3 /* Main.storyboard */; };
 		C43E6A7E286D4E0800269DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43E6A7D286D4E0800269DD3 /* Assets.xcassets */; };
 		C43E6A81286D4E0800269DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43E6A7F286D4E0800269DD3 /* LaunchScreen.storyboard */; };
+		C43E6A89286D51CA00269DD3 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E6A88286D51CA00269DD3 /* NoticeViewController.swift */; };
+		C43E6A8B286E04A400269DD3 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E6A8A286E04A400269DD3 /* NewsCell.swift */; };
+		C43E6A8D286E531900269DD3 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E6A8C286E531900269DD3 /* APICaller.swift */; };
+		C43E6A8F287217E100269DD3 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E6A8E287217E100269DD3 /* News.swift */; };
+		C43E6A922872A28D00269DD3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C43E6A912872A28D00269DD3 /* SDWebImage */; };
+		C43E6A942872A28D00269DD3 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C43E6A932872A28D00269DD3 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,13 @@
 		C43E6A74286D4E0500269DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C43E6A76286D4E0500269DD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C43E6A78286D4E0500269DD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C43E6A7B286D4E0500269DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C43E6A7D286D4E0800269DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C43E6A80286D4E0800269DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C43E6A82286D4E0800269DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43E6A88286D51CA00269DD3 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		C43E6A8A286E04A400269DD3 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		C43E6A8C286E531900269DD3 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		C43E6A8E287217E100269DD3 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43E6A942872A28D00269DD3 /* SDWebImageMapKit in Frameworks */,
+				C43E6A922872A28D00269DD3 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +69,10 @@
 				C43E6A74286D4E0500269DD3 /* AppDelegate.swift */,
 				C43E6A76286D4E0500269DD3 /* SceneDelegate.swift */,
 				C43E6A78286D4E0500269DD3 /* ViewController.swift */,
-				C43E6A7A286D4E0500269DD3 /* Main.storyboard */,
+				C43E6A88286D51CA00269DD3 /* NoticeViewController.swift */,
+				C43E6A8A286E04A400269DD3 /* NewsCell.swift */,
+				C43E6A8C286E531900269DD3 /* APICaller.swift */,
+				C43E6A8E287217E100269DD3 /* News.swift */,
 				C43E6A7D286D4E0800269DD3 /* Assets.xcassets */,
 				C43E6A7F286D4E0800269DD3 /* LaunchScreen.storyboard */,
 				C43E6A82286D4E0800269DD3 /* Info.plist */,
@@ -83,6 +96,10 @@
 			dependencies = (
 			);
 			name = "Rss Noticias";
+			packageProductDependencies = (
+				C43E6A912872A28D00269DD3 /* SDWebImage */,
+				C43E6A932872A28D00269DD3 /* SDWebImageMapKit */,
+			);
 			productName = "Rss Noticias";
 			productReference = C43E6A71286D4E0500269DD3 /* Rss Noticias.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = C43E6A68286D4E0500269DD3;
+			packageReferences = (
+				C43E6A902872A28D00269DD3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = C43E6A72286D4E0500269DD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +147,6 @@
 			files = (
 				C43E6A81286D4E0800269DD3 /* LaunchScreen.storyboard in Resources */,
 				C43E6A7E286D4E0800269DD3 /* Assets.xcassets in Resources */,
-				C43E6A7C286D4E0500269DD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43E6A79286D4E0500269DD3 /* ViewController.swift in Sources */,
+				C43E6A8D286E531900269DD3 /* APICaller.swift in Sources */,
 				C43E6A75286D4E0500269DD3 /* AppDelegate.swift in Sources */,
+				C43E6A8B286E04A400269DD3 /* NewsCell.swift in Sources */,
+				C43E6A8F287217E100269DD3 /* News.swift in Sources */,
+				C43E6A89286D51CA00269DD3 /* NoticeViewController.swift in Sources */,
 				C43E6A77286D4E0500269DD3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +170,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C43E6A7A286D4E0500269DD3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C43E6A7B286D4E0500269DD3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C43E6A7F286D4E0800269DD3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +307,6 @@
 				INFOPLIST_FILE = "Rss Noticias/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +334,6 @@
 				INFOPLIST_FILE = "Rss Noticias/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +371,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C43E6A902872A28D00269DD3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C43E6A912872A28D00269DD3 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C43E6A902872A28D00269DD3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		C43E6A932872A28D00269DD3 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C43E6A902872A28D00269DD3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C43E6A69286D4E0500269DD3 /* Project object */;
 }
